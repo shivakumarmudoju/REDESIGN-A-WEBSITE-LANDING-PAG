@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HubSpot CRM Free Trial - Redesigned</title>
+  <style>
+    /* Reset & basic styles */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header section */
+    header {
+      background: #0052cc;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 0 0 10px 10px;
+    }
+    header h1 {
+      font-size: 2.75rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.9;
+    }
+    .cta-btn {
+      background: #ff7a59;
+      padding: 16px 40px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(255, 122, 89, 0.5);
+      transition: background 0.3s ease;
+    }
+    .cta-btn:hover {
+      background: #ff5b30;
+    }
+
+    /* Form Section */
+    .signup-section {
+      background: white;
+      margin: -40px auto 40px;
+      padding: 30px 30px 40px;
+      border-radius: 10px;
+      max-width: 480px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+    .signup-section h2 {
+      margin-bottom: 20px;
+      font-weight: 600;
+      text-align: center;
+      color: #222;
+    }
+    .signup-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .signup-form input[type="email"],
+    .signup-form input[type="text"] {
+      padding: 14px 18px;
+      border: 1.5px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+    .signup-form input[type="email"]:focus,
+    .signup-form input[type="text"]:focus {
+      border-color: #0052cc;
+      outline: none;
+    }
+    .signup-form button {
+      background: #0052cc;
+      color: white;
+      padding: 16px;
+      font-weight: 700;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .signup-form button:hover {
+      background: #003a99;
+    }
+    .small-text {
+      font-size: 0.85rem;
+      color: #666;
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    /* Social Proof Section */
+    .social-proof {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .social-proof p {
+      font-weight: 600;
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      opacity: 0.6;
+      filter: grayscale(60%);
+    }
+    .logos img {
+      max-height: 40px;
+      max-width: 120px;
+      object-fit: contain;
+      transition: filter 0.3s ease;
+    }
+    .logos img:hover {
+      filter: grayscale(0);
+      opacity: 1;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .signup-section {
+        margin: -20px 15px 40px;
+        padding: 25px;
+      }
+      .logos {
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Start Your Free CRM Trial Today</h1>
+    <p>Manage your contacts, track deals, and grow your business with HubSpot's free CRM tool — no credit card required.</p>
+    <button class="cta-btn" onclick="document.getElementById('signup-form').scrollIntoView({behavior: 'smooth'})">Get Started Free</button>
+  </header>
+
+  <section class="signup-section" id="signup-form">
+    <h2>Create Your Account</h2>
+    <form class="signup-form" action="#" method="POST">
+      <input type="text" name="fullName" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <button type="submit">Start Free Trial</button>
+    </form>
+    <p class="small-text">No credit card required. Cancel anytime.</p>
+  </section>
+
+  <section class="social-proof">
+    <p>Trusted by over 80,000 businesses worldwide</p>
+    <div class="logos" aria-label="Trusted company logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Coca-Cola_logo.svg/2560px-Coca-Cola_logo.svg.png" alt="Coca-Cola Logo" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Microsoft_Logo_2012.svg" alt="Microsoft Logo" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Googleplex-Logo.svg" alt="Google Logo" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo" />
+    </div>
+  </section>
+</body>
+</html>
